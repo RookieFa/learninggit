@@ -94,3 +94,6 @@ HEAD is now at 212ffc1 learn Markdown
 * 创建+切换分支：git checkout -b <name>
 * 合并某分支到当前分支：git merge <name>
 * 删除分支：git branch -d <name>
+
+
+## 解决冲突
