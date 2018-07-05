@@ -127,11 +127,11 @@ document.write(fib(10));
 ![gitLog](https://git-scm.com/images/logo@2x.png "git官网找的") 
 
 #### 参考式
-1. ![百度LOGO][4]
-2. ![简书LOGO][5]
+1. ![APACHE LOGO][4]
+2. ![Tomcat LOGO][5]
 
-[4]: https://www.baidu.com/img/bd_logo1.png "百度的"
-[5]: https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png "简书的"
+[4]: https://www.apache.org/img/asf_logo.png "APACHE 的"
+[5]: https://tomcat.apache.org/res/images/tomcat.png "tomcat的"
 
 ## 强调
 1. 使用**或__表示粗体。
