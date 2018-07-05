@@ -54,40 +54,43 @@ HEAD is now at 212ffc1 learn Markdown
 
 ### 撤销修改
 命令`git checkout -- readme.txt`意思就是，把`readme.txt`文件在工作区的修改全部撤销，这里有两种情况：
+
+*(`git checkout`其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除)*
 * 一种是`readme.txt`自修改后还**没有被放到暂存区**，现在，撤销修改就回到和版本库一模一样的状态；
 * 一种是`readme.txt` __已经添加到暂存区__ 后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
 
 
+用命令`git reset HEAD <file>`可以把暂存区的修改撤销掉（unstage），重新放回工作区
+
+1. 场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令`git checkout -- file`。
+2. 场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令`git reset HEAD <file>`，就回到了场景1，第二步按场景1操作。
 
 
+### 删除文件
+* 命令`git rm`用于删除一个文件
 
+***
 
-
-
-
-
-
-
-
-
-
-1. 生产密钥
+## 远程仓库
+* 创建SSH Key
 
 `$ ssh-keygen -t rsa -C "ali-yqf@null.com"`
 
-2. 添加远程仓库
+* 添加远程仓库
 
 `$ git remote add origin git@github.com:RookieFa/learninggit.git`
 
-3.把本地资源推到远程仓库
-$ git push -u origin master
-由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
+* 推送本地仓库内容到远程仓库
+`git push -u origin master` 
 
+**注意:** 由于远程库是空的，我们第一次推送`master`分支时，加上了`-u`参数，Git不但会把本地的`master`分支内容推送的远程新的`master`分支，还会把本地的`master`分支和远程的`master`分支关联起来，在以后的推送或者拉取时就可以简化命令`git push origin master`。
 
-### About Branch
-. 查看分支：git branch
-. 创建分支：git branch <name>
-. 切换分支：git checkout <name>
-. 创建+切换分支：git checkout -b <name>
-. 合并某分支到当前分支：git merge <name>
-. 删除分支：git branch -d <name>
+***
+## 分支管理
+
+* 查看分支：git branch
+* 创建分支：git branch <name>
+* 切换分支：git checkout <name>
+* 创建+切换分支：git checkout -b <name>
+* 合并某分支到当前分支：git merge <name>
+* 删除分支：git branch -d <name>
