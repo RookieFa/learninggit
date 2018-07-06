@@ -15,12 +15,9 @@ $ git config --global user.email "email@example.com"
 初始化一个Git仓库，使用`git init`命令。
 
 添加文件到Git仓库，分两步：
-* 第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
+* 第一步是用`git add`把文件添加进去，实际上就是把文件修改添加到暂存区；使用命令`git add <file>`，注意，可反复多次使用，添加多个文件
 
-使用命令`git add <file>`，注意，可反复多次使用，添加多个文件
-
-* 第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
-* 使用命令`git commit -m <message>`，完成。
+* 第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。* 使用命令`git commit -m <message>`，完成。
 
 ## 查看状态
 
