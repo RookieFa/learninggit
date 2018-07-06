@@ -1,4 +1,9 @@
 test file
 Hello develop
+<<<<<<< HEAD
 from master
+=======
+from masteraaa
+nihao a nihao a 
+>>>>>>> develop
 
