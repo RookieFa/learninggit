@@ -156,5 +156,5 @@
 | 15 |`RENAMENX key newkey` |仅当 newkey 不存在时，将 key 改名为 newkey 。|
 | **16** |**`TYPE key`**|**返回 key 所储存的值的类型。**|
 
-## 常用数据类型
+## String
 * 
